@@ -41,7 +41,7 @@ body {
   margin-top: 2.6rem;
 }
 
-.seatsInfo {
+.cinemaInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,7 +258,7 @@ div.theaterRows {
 .btnBuy:hover {
   color: var(--main-selected);
   background: var(--main-color);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .checkoutTotal {

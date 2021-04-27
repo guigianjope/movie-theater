@@ -12,7 +12,7 @@
 <body>
 
     <div class="content">
-        <label for="" class="title">Choose the movie.</label>
+        <label for="" class="title">Choose the room.</label>
         <select name="" id="movie">
             <option value="30"> VIP <span class="price"> $30 </span></option>
             <option value="25"> 4DX <span class="price"> $25 </span></option>
@@ -23,7 +23,7 @@
         </select>
     </div>
     
-    <div class="seatsInfo">
+    <div class="cinemaInfo">
         <div class="seatInfo free"></div>
         <small>Free</small>
 
@@ -112,17 +112,24 @@
     </div>
 
     <div class="checkout">
-        <div class="checkoutAreaOne">
+        <div class="checkOutAreaOne">
             <span>Seat(s) (N/L):</span>
             <div class="seatId"></div>
             <br>
-            <div class="checkOutAreaTotal">
+            <div class="checkoutTotal">
                 <span>Seat(s):</span> <span class="seatTotal">0</span>
                 <span>Total:</span> <span class="costTotal">0</span>
             </div>
         </div>
-        <div class="checkoutAreaTwo">
-            <form action="">
+
+        <div class="checkOutAreaTwo">
+            <form action="https://YOURSITE.COM/CREDITCARDCHECKOUT" method="POST">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_YOURSTRIPEKEY" data-name="Payment" data-description="Total Security">
+                </script>
+                <script>
+                  // Hide default stripe button
+                  document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                </script>
                 <button type="submit" class="btnBuy">Buy</button>
             </form>
             
