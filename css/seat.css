@@ -20,13 +20,13 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: auto;
+  height: calc(100vh - 50px);
   background: var(--back-color);
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2.6rem;
+  margin-top: 1rem;
 }
 
 .cinemaInfo {
@@ -100,6 +100,13 @@ label.title {
   cursor: pointer;
   perspective: 100px;
   transition: all 0.1s linear;
+}
+
+.wheelChair {
+  width: 1.2rem;
+  color: var(--main-color);
+  margin: 0.2rem 0.35rem;
+  text-align: center;
 }
 
 .seat:not(.occupied):hover {
@@ -267,12 +274,6 @@ div.theaterRows {
   grid-template-rows: 1fr 1fr;
 }
 
-.wheelChair {
-  width: 1.2rem;
-  color: var(--main-color);
-  margin: 0.2rem 0.3rem;
-  text-align: center;
-}
 
 /* MEDIA QUERY  */
 @media only screen and (max-width: 768px) {

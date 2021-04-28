@@ -7,135 +7,174 @@
     <title>Movie Seat Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="stylesheet" href="css/seat.css">
+    <link rel="stylesheet" href="css/menus.css">
 </head>
 <body>
 
-    <div class="content">
-        <label for="" class="title">Choose the room.</label>
-        <select name="" id="movie">
-            <option value="30"> VIP <span class="price"> $30 </span></option>
-            <option value="25"> 4DX <span class="price"> $25 </span></option>
-            <option value="20"> IMAX <span class="price"> $20 </span></option>
-            <option value="17"> MacroXE <span class="price"> $17 </span></option>
-            <option value="15"> 3D <span class="price"> $15 </span></option>
-            <option value="12"> 2D <span class="price"> $12 </span></option>
-        </select>
-    </div>
-    
-    <div class="cinemaInfo">
-        <div class="seatInfo free"></div>
-        <small>Free</small>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container"><img class="cinema-logo" src="img/logo.png" alt=""></div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li class="menu-list-item active">HOME</li>
+                        <li class="menu-list-item">ABOUT US</li>
+                        <li class="menu-list-item">PRODUCTS</li>
+                    </ul>
+                </div>
+                <div class="profile-container">
+                    <img class="profile-picture" src="img/profile.jpg" alt="">
+                    <div class="profile-text-container">
+                        <span class="profile-text">Sign In</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="toggle">
+                        <i class="fas fa-moon toggle-icon"></i>
+                        <i class="fas fa-sun toggle-icon"></i>
+                        <div class="toggle-ball"></div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <i class="left-menu-icon fas fa-home"></i>
+            <i class="left-menu-icon fas fa-search"></i>
+            <i class="left-menu-icon fas fa-users"></i>
+            <i class="left-menu-icon fas fa-bookmark"></i>
+            <i class="left-menu-icon fas fa-tv"></i>
+            <i class="left-menu-icon fas fa-hourglass-start"></i>
+            <i class="left-menu-icon fas fa-shopping-cart"></i>
+        </div>
 
-        <div class="seatInfo selected"></div>
-        <small>Selected</small>
+    <div class="container">    
+        <div class="content">
+            <label for="" class="title">Choose the room.</label>
+            <select name="" id="movie">
+                <option value="30"> VIP <span class="price"> $30 </span></option>
+                <option value="25"> 4DX <span class="price"> $25 </span></option>
+                <option value="20"> IMAX <span class="price"> $20 </span></option>
+                <option value="17"> MacroXE <span class="price"> $17 </span></option>
+                <option value="15"> 3D <span class="price"> $15 </span></option>
+                <option value="12"> 2D <span class="price"> $12 </span></option>
+            </select>
+        </div>
         
-        <div class="seatInfo occupied"></div>
-        <small>Occupied</small>
-    </div>
+        <div class="cinemaInfo">
+            <div class="seatInfo free"></div>
+            <small>Free</small>
 
-    <div class="theater">
-        <div class="screenArea"><span>Movie</span></div>
-        <div class="theaterRows">
-            <!-- 1 -->
-            <div class="row" id="1">
-                <div class="rowNumb" id="1"></div>
-                <div class="seat" id="1"></div>
-                <div class="seat occupied" id="2"></div>
-                <div class="seat" id="3"></div>
-                <div class="seat" id="4"></div>
-                <div class="seatwheelChair" id="5"><img class="wheelChair" src="img/wheelchair.png" alt="wheelchair"></div>
-                <div class="seatwheelChair" id="6"><img class="wheelChair" src="img/wheelchair.png" alt="wheelchair"></div>
-                <div class="seat" id="7"></div>
-                <div class="seat" id="8"></div>
-                <div class="seat occupied" id="9"></div>
-                <div class="seat" id="10"></div>
-            </div>
-            <!-- 2 -->
-            <div class="row" id="2">
-                <div class="rowNumb" id="2"></div>
-                <div class="seat" id="1"></div>
-                <div class="seat" id="2"></div>
-                <div class="seat" id="3"></div>
-                <div class="seat" id="4"></div>
-                <div class="seat" id="5"></div>
-                <div class="seat" id="6"></div>
-                <div class="seat" id="7"></div>
-                <div class="seat" id="8"></div>
-                <div class="seat" id="9"></div>
-                <div class="seat" id="10"></div>
-            </div>
-            <!-- 3 -->
-            <div class="row" id="3">
-                <div class="rowNumb" id="3"></div>
-                <div class="seat" id="1"></div>
-                <div class="seat" id="2"></div>
-                <div class="seat" id="3"></div>
-                <div class="seat" id="4"></div>
-                <div class="seat" id="5"></div>
-                <div class="seat" id="6"></div>
-                <div class="seat" id="7"></div>
-                <div class="seat" id="8"></div>
-                <div class="seat occupied" id="9"></div>
-                <div class="seat occupied" id="10"></div>
-            </div>
-            <!-- 4 -->
-            <div class="row" id="4">
-                <div class="rowNumb" id="4"></div>
-                <div class="seat" id="1"></div>
-                <div class="seat" id="2"></div>
-                <div class="seat" id="3"></div>
-                <div class="seat" id="4"></div>
-                <div class="seat" id="5"></div>
-                <div class="seat" id="6"></div>
-                <div class="seat" id="7"></div>
-                <div class="seat" id="8"></div>
-                <div class="seat" id="9"></div>
-                <div class="seat" id="10"></div>
-            </div>
-            <!-- 5 -->
-            <div class="row" id="5">
-                <div class="rowNumb" id="5"></div>
-                <div class="seat" id="1"></div>
-                <div class="seat" id="2"></div>
-                <div class="seat" id="3"></div>
-                <div class="seat" id="4"></div>
-                <div class="seat" id="5"></div>
-                <div class="seat" id="6"></div>
-                <div class="seat" id="7"></div>
-                <div class="seat" id="8"></div>
-                <div class="seat" id="9"></div>
-                <div class="seat" id="10"></div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="checkout">
-        <div class="checkOutAreaOne">
-            <span>Seat(s) (N/L):</span>
-            <div class="seatId"></div>
-            <br>
-            <div class="checkoutTotal">
-                <span>Seat(s):</span> <span class="seatTotal">0</span>
-                <span>Total:</span> <span class="costTotal">0</span>
-            </div>
-        </div>
-
-        <div class="checkOutAreaTwo">
-            <form action="https://YOURSITE.COM/CREDITCARDCHECKOUT" method="POST">
-                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_YOURSTRIPEKEY" data-name="Payment" data-description="Total Security">
-                </script>
-                <script>
-                  // Hide default stripe button
-                  document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
-                </script>
-                <button type="submit" class="btnBuy">Buy</button>
-            </form>
+            <div class="seatInfo selected"></div>
+            <small>Selected</small>
             
+            <div class="seatInfo occupied"></div>
+            <small>Occupied</small>
         </div>
-    </div>
 
+        <div class="theater">
+            <div class="screenArea"><span>Movie</span></div>
+            <div class="theaterRows">
+                <!-- 1 -->
+                <div class="row" id="1">
+                    <div class="rowNumb" id="1"></div>
+                    <div class="seat" id="1"></div>
+                    <div class="seat" id="2"></div>
+                    <div class="seat" id="3"></div>
+                    <div class="seat" id="4"></div>
+                    <div class="seatwheelChair" id="5"><img class="wheelChair" src="img/wheelchair.png" alt="wheelchair"></div>
+                    <div class="seatwheelChair" id="6"><img class="wheelChair" src="img/wheelchair.png" alt="wheelchair"></div>
+                    <div class="seat" id="7"></div>
+                    <div class="seat" id="8"></div>
+                    <div class="seat" id="9"></div>
+                    <div class="seat" id="10"></div>
+                </div>
+                <!-- 2 -->
+                <div class="row" id="2">
+                    <div class="rowNumb" id="2"></div>
+                    <div class="seat" id="1"></div>
+                    <div class="seat" id="2"></div>
+                    <div class="seat" id="3"></div>
+                    <div class="seat" id="4"></div>
+                    <div class="seat" id="5"></div>
+                    <div class="seat" id="6"></div>
+                    <div class="seat" id="7"></div>
+                    <div class="seat" id="8"></div>
+                    <div class="seat" id="9"></div>
+                    <div class="seat" id="10"></div>
+                </div>
+                <!-- 3 -->
+                <div class="row" id="3">
+                    <div class="rowNumb" id="3"></div>
+                    <div class="seat" id="1"></div>
+                    <div class="seat" id="2"></div>
+                    <div class="seat" id="3"></div>
+                    <div class="seat" id="4"></div>
+                    <div class="seat" id="5"></div>
+                    <div class="seat" id="6"></div>
+                    <div class="seat" id="7"></div>
+                    <div class="seat" id="8"></div>
+                    <div class="seat" id="9"></div>
+                    <div class="seat" id="10"></div>
+                </div>
+                <!-- 4 -->
+                <div class="row" id="4">
+                    <div class="rowNumb" id="4"></div>
+                    <div class="seat" id="1"></div>
+                    <div class="seat" id="2"></div>
+                    <div class="seat" id="3"></div>
+                    <div class="seat" id="4"></div>
+                    <div class="seat" id="5"></div>
+                    <div class="seat" id="6"></div>
+                    <div class="seat" id="7"></div>
+                    <div class="seat" id="8"></div>
+                    <div class="seat" id="9"></div>
+                    <div class="seat" id="10"></div>
+                </div>
+                <!-- 5 -->
+                <div class="row" id="5">
+                    <div class="rowNumb" id="5"></div>
+                    <div class="seat" id="1"></div>
+                    <div class="seat" id="2"></div>
+                    <div class="seat" id="3"></div>
+                    <div class="seat" id="4"></div>
+                    <div class="seat" id="5"></div>
+                    <div class="seat" id="6"></div>
+                    <div class="seat" id="7"></div>
+                    <div class="seat" id="8"></div>
+                    <div class="seat" id="9"></div>
+                    <div class="seat" id="10"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="checkout">
+            <div class="checkOutAreaOne">
+                <span>Seat(s) (N/L):</span>
+                <div class="seatId"></div>
+                <br>
+                <div class="checkoutTotal">
+                    <span>Seat(s):</span> <span class="seatTotal">0</span>
+                    <span>Total:</span> <span class="costTotal">0</span>
+                </div>
+            </div>
+
+            <div class="checkOutAreaTwo">
+                <form action="https://YOURSITE.COM/CREDITCARDCHECKOUT" method="POST">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_YOURSTRIPEKEY" data-name="Payment" data-description="Total Security">
+                    </script>
+                    <script>
+                    // Hide default stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                    </script>
+                    <button type="submit" class="btnBuy">Buy</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>    
     <script src="js/main.js"></script>
 
 </body>
