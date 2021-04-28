@@ -47,7 +47,11 @@
   }
 
   .movie-list-container {
-      padding: 20px;     
+      padding: 0 20px;     
+  }
+
+  .movie-list-wrapper {
+      position: relative;
   }
 
   .movie-list {
@@ -119,4 +123,14 @@
     left: 15px;
     opacity: 0;
     transition: 0.8s all ease-in-out;
+}
+
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: #A3DDCB;
+    opacity: 0.5;
+    cursor: pointer;
 }
