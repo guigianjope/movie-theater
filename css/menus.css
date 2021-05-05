@@ -24,6 +24,7 @@
 
   .cinema-logo {
       height: 40px;
+      cursor: pointer;
   }
 
   .menu-container {
@@ -41,7 +42,12 @@
 
   .menu-list-item {
     margin-right: 30px;
+    cursor: pointer;
 }
+
+.menu-list-item:hover {  
+    color:#A3DDCB;
+    }
 
   .profile-container {
     flex: 2;
@@ -52,7 +58,12 @@
 
   .profile-text-container {
       margin: 0 20px;
+      cursor: pointer;
   }
+
+  .profile-text-container:hover {  
+    color:#A3DDCB;
+    }
 
   .profile-picture {
       border-radius: 50%;
@@ -104,7 +115,12 @@
   .left-menu-icon {  
       font-size: 20px;
       margin-bottom: 30px;
+      cursor: pointer;
   }
+
+  .left-menu-icon:hover {  
+    color:#A3DDCB;
+    }
 
     .navbar.active {
         background-color: #FFE3DE;

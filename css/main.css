@@ -21,7 +21,7 @@
 
   .movie-list-item-title {
     color: #FFE3DE;
-}
+  }
 
   .content-container {
       margin-left: 50px;
@@ -53,8 +53,18 @@
       cursor: pointer;
   }
 
+  a {
+      text-decoration: none;
+      color: #0a043c;
+      font-weight: bold;
+  }
+
   .movie-list-container {
       padding: 0 20px;     
+  }
+
+  .movie-list-title {
+      color: #FFE3DE;
   }
 
   .movie-list-wrapper {
