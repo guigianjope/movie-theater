@@ -36,6 +36,11 @@
       list-style: none;
   }
 
+  a {
+    text-decoration: none;
+    color: #FFE3DE;
+}
+
   .menu-list-item.active {
       font-weight: bold;
   }

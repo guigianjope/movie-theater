@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Seat Booking</title>
+    <title>Cinema Seat Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -17,12 +17,12 @@
 
         <div class="navbar">
             <div class="navbar-container">
-                <div class="logo-container"><img class="cinema-logo" src="img/logo.png" alt=""></div>
+                <a href="index.html" class="logo-container"><img class="cinema-logo" src="img/logo.png" alt=""></a>
                 <div class="menu-container">
                     <ul class="menu-list">
-                        <li class="menu-list-item active">Home</li>
-                    <li class="menu-list-item">About Us</li>
-                    <li class="menu-list-item">Products</li>
+                        <li><a class="menu-list-item" href="index.html">Home</a></li>
+                        <li><a class="menu-list-item" href="#">About Us</a></li>
+                        <li><a class="menu-list-item" href="#">Products</a></li>
                     </ul>
                 </div>
                 <div class="profile-container">
@@ -40,13 +40,16 @@
             </div>
         </div>
         <div class="sidebar">
-            <i class="left-menu-icon fas fa-home"></i>
+            <a href="index.html" class="left-menu-icon fas fa-home"></a>
+            <a href="#" class="left-menu-icon fas fa-users"></a>
+            <a href="#" class="left-menu-icon fas fa-shopping-cart"></a>
+            <!-- <i class="left-menu-icon fas fa-home"></i>
             <i class="left-menu-icon fas fa-search"></i>
             <i class="left-menu-icon fas fa-users"></i>
             <i class="left-menu-icon fas fa-bookmark"></i>
             <i class="left-menu-icon fas fa-tv"></i>
             <i class="left-menu-icon fas fa-hourglass-start"></i>
-            <i class="left-menu-icon fas fa-shopping-cart"></i>
+            <i class="left-menu-icon fas fa-shopping-cart"></i> -->
         </div>
 
     <div class="container">    
@@ -175,6 +178,7 @@
             </div>
         </div>
     </div>    
+
     <script src="js/seat.js"></script>
     <script src="js/main.js"></script>
 

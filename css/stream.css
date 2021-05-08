@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .container {
+      background-color: black;
+      min-height: calc(100vh - 50px);
+      margin-left: 50px;
+  }
+
+  .container.active {
+    background-color: white;
+  }
+
+  
