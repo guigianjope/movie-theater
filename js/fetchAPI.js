@@ -36,7 +36,7 @@ function showMovies(data) {
             ${overview}
         </div>
 
-        <a class="movie-button" id="watch">WATCH</a> </div>
+        <a class="movie-button" id="watch">WATCH</a> 
         `
 
         main.appendChild(movieEl);

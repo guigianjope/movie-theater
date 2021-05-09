@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="css/menus.css">
     <link rel="stylesheet" href="css/stream.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
@@ -50,6 +51,8 @@
         <a href="#" class="left-menu-icon fas fa-users"></a>
         <a href="#" class="left-menu-icon fas fa-shopping-cart"></a>
     </div>
+
+    
     <div class="container">
         <div id="main" class="main">
             <div class="movie">
@@ -63,14 +66,25 @@
                     <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis incidunt provident iste perferendis excepturi! Delectus...   -->                    
                 </div>
 
-                <a class="movie-button" id="watch">WATCH</a> </div>
+                <a class="movie-button" id="watch">WATCH</a>
             </div>                    
         </div>
     </div>
-    
 
+    <!-- modal -->
+    <div id="modal_movie" class="modal-bg">
+        <div class="modal-container">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis, est et sollicitudin consectetur, enim velit blandit quam, ut mollis lorem tellus sit amet lacus.</p>
+            <a id="close" class="close">X</a>
+        </div>                            
+    </div>
+
+    
+    <script src="js/modal.js"></script>
     <script src="js/fetchAPI.js"></script>
     <script src="js/main.js"></script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
