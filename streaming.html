@@ -25,6 +25,7 @@
             <div class="menu-container">
                 <ul class="menu-list">
                     <li><a class="menu-list-item" href="index.html">Home</a></li>
+                    <li><a class="menu-list-item active" href="streaming.html">Streaming</a></li>
                     <li><a class="menu-list-item" href="#">About Us</a></li>
                     <li><a class="menu-list-item" href="#">Products</a></li>
                 </ul>
@@ -45,43 +46,30 @@
     </div>
     <div class="sidebar">
         <a href="index.html" class="left-menu-icon fas fa-home"></a>
+        <a href="streaming.html" class="left-menu-icon fas fa-tv"></a>
         <a href="#" class="left-menu-icon fas fa-users"></a>
         <a href="#" class="left-menu-icon fas fa-shopping-cart"></a>
     </div>
+    <div class="container">
+        <div id="main" class="main">
+            <div class="movie">
+                <img class="movie-img" src="" alt="Image">
 
-    <div class="container" id="UpcomingMovies">
-        <div>
-            <h2>Upcoming Movies</h2>
-            <div class="row Movies">
-                <div class="col-lg-4 col-md-6">
-                    <div class="row">
-                        <div class="col-6"><a href="Movies/Venom2/Venom2.html"><img
-                                    src="Images/UpcomingMoviesimages/Venom2.jpg"></a></div>
-                        <div class="col-6"><a href="Movies/Morbius/Morbius.html"><img
-                                    src="Images/UpcomingMoviesimages/Morbius.jpg"></a></div>
-                    </div>
+                <div class="movie-title">
+                    <h3><!-- Movie Title --></h3>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="row">
-                        <div class="col-6"><a href="Movies/TheBatman/TheBatman.html"><img
-                                    src="Images/UpcomingMoviesimages/TheBatman.jpg"></a></div>
-                        <div class="col-6"><a href="Movies/WonderWoman1984/WonderWoman1984.html"><img
-                                    src="Images/UpcomingMoviesimages/WonderWoman1984.jpg"></a></div>
-                    </div>
+
+                <div class="overview"> 
+                    <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis incidunt provident iste perferendis excepturi! Delectus...   -->                    
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="row">
-                        <div class="col-6"><a href="Movies/PeterRabbit2TheRunaway/PeterRabbit2TheRunaway.html"><img
-                                    src="Images/UpcomingMoviesimages/PeterRabbit2TheRunaway.jpg"></a></div>
-                        <div class="col-6"><a href="Movies/JungleCruise/JungleCruise.html"><img
-                                    src="Images/UpcomingMoviesimages/JungleCruise.jpg"></a></div>
-                    </div>
-                </div>
-            </div>
+
+                <a class="movie-button" id="watch">WATCH</a> </div>
+            </div>                    
         </div>
     </div>
+    
 
-
+    <script src="js/fetchAPI.js"></script>
     <script src="js/main.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

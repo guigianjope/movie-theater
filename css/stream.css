@@ -1,4 +1,11 @@
-* {
+/* color
+#0a043c
+#03506f
+#A3DDCB
+#FFE3DE
+*/
+
+  * {
     margin: 0;
   }
 
@@ -7,13 +14,94 @@
   }
 
   .container {
-      background-color: black;
-      min-height: calc(100vh - 50px);
-      margin-left: 50px;
+    background-color: black;
+    color: #FFE3DE;
+    min-height: calc(100vh - 50px);
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
   .container.active {
-    background-color: white;
+    background-color: #FFE3DE;
+    color: #0a043c;
   }
+
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .movie {
+    width: 300px;
+    margin: 2rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+
+  .movie img {
+    width: 100%;
+  }
+
+  .movie:hover .movie-img{
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+
+  .movie:hover .movie-title, 
+  .movie:hover .overview,
+  .movie:hover .movie-button {
+    opacity: 1;
+  }
+
+  .movie-title {
+      background-color: #333;
+      padding: 0 10px;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 8%;
+      left: 15px;
+      opacity: 0;
+      transition: 0.8s all ease-in-out;
+      max-width: 250px;
+  }
+
+  .overview {
+    background-color: #333;
+    color: #FFE3DE;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 28%;
+    left: 15px;
+    width: 250px;
+    opacity: 0;
+    transition: 0.8s all ease-in-out;
+  }
+
+  .movie-button {
+    padding: 10px;
+    background-color: #A3DDCB;
+    color: #0a043c;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    opacity: 0;
+    transition: 0.8s all ease-in-out;
+}
 
   
