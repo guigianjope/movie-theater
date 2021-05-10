@@ -38,14 +38,14 @@
 
   a {
     text-decoration: none;
-    color: #FFE3DE;
 }
 
   .menu-list-item.active {
-      font-weight: bold;
+      color: #0a043c;
   }
 
   .menu-list-item {
+      color: #FFE3DE;
     margin-right: 30px;
     cursor: pointer;
 }
@@ -108,7 +108,6 @@
       width: 50px;
       height: 100%;
       background-color: #0a043c;
-      color: #FFE3DE;
       position: fixed;
       top: 0;
       display: flex;
@@ -118,6 +117,7 @@
   }
 
   .left-menu-icon {  
+      color: #FFE3DE;
       font-size: 20px;
       margin-bottom: 30px;
       cursor: pointer;
@@ -127,6 +127,10 @@
     color:#A3DDCB;
     }
 
+    .left-menu-icon.active{  
+        color:#0a043c;
+        }
+
     .navbar.active {
         background-color: #FFE3DE;
         color: #0a043c;
@@ -134,7 +138,6 @@
 
     .sidebar.active {
         background-color: #FFE3DE;
-        color: #0a043c;
     }
 
     .toggle.active {
@@ -156,3 +159,74 @@
             display: none;
         }
     }
+
+  /*   footer */
+
+  ul {
+    list-style: none;
+  }
+  footer {
+    padding: 2rem 4rem;
+    background: #0a043c;
+    color: #FFE3DE;
+
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    gap: 2rem;
+  }
+  h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .footer_about p {
+    font-size: 0.85rem;
+  }
+  
+  .footer_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_main ul {
+    padding-left: 1rem;
+    line-height: 1.5;
+  }
+  
+  .footer_right .footer_links {
+    padding: 1.2rem;
+    display: flex;
+    gap: 10px;
+  }
+  .footer_right .footer_links i {
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  i:hover {
+      color: #A3DDCB;
+      cursor: pointer;
+  }
+  
+  .copyright {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    border-top: 1px solid #FFE3DE;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .footer {
+      grid-template-column: 1fr;
+    }
+  }
+
+  footer.active {
+    background-color: #FFE3DE;
+    color: #0a043c;
+}
+

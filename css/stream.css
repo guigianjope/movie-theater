@@ -25,6 +25,10 @@
     overflow: hidden;
   }
 
+  h1 {
+    margin: 20px;
+  }
+
   .container.active {
     background-color: #FFE3DE;
     color: #0a043c;
